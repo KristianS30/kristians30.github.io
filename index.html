@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ImageTarget</title>
+    <link rel="icon" href="data:," />
+    <style>
+      body {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .ar-container {
+        height: 700px;
+        width: 1500px;
+        visibility: hidden;
+        background-color: rgba(111, 74, 179, 0.5);
+        display: flex;
+        flex-direction: row;
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+        font-weight: bold;
+        color: white;
+      }
+
+      .profile-picture {
+        margin: 5px, 0, 5px, 0;
+        height: 70px;
+      }
+
+      .name {
+        font-size: 150px;
+      }
+
+      .title {
+        font-size: 50px;
+      }
+
+      .links {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="ar-container" id="ar-container">
+      <div class="profile-picture">
+        <img src="assets/img/profile_picture_ph.png" alt="" />
+      </div>
+      <div class="information" id="info">
+        <div class="info name" id="name">KRISTIAN SCHMIDT</div>
+        <div class="info title" id="title">
+          Engineering student, LAB university of applied sciences
+        </div>
+      </div>
+      <div class="links" id="links">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          cupiditate impedit eaque asperiores veritatis nisi ut perspiciatis
+          eius quos minus illum quo nihil id expedita, aspernatur provident et?
+          Tenetur, dicta.
+        </p>
+      </div>
+    </div>
+    <script src="/libs/mindar/mindar-image-three.prod.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
